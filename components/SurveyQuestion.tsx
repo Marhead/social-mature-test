@@ -14,7 +14,7 @@ const SurveyQuestion: React.FC<SurveyQuestionProps> = ({
                                                            onAnswer,
                                                        }) => {
     return (
-        <div className="mt-4">
+        <div className="my-16">
             <p className="font-bold mb-2">{questionText}</p>
             {answers.map((answer, idx) => (
                 <button
