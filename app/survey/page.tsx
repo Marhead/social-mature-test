@@ -80,7 +80,7 @@ export default function SurveyPage() {
             </p>
 
             <SurveyQuestion
-                questionText={currentQuestion.text}
+                questionText={currentQuestion.question}
                 answers={currentQuestion.answers}
                 onAnswer={handleAnswer}
             />

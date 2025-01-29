@@ -23,9 +23,9 @@ export default function LoginPage() {
 
     return (
         <div className="max-w-md mx-auto mt-8 text-center">
-            <h1 className="text-2xl font-bold mb-4">Welcome to Mind Testing Survey</h1>
+            <h1 className="text-2xl font-bold mb-4">중앙적성검사 사회성숙도 테스트</h1>
             <p className="mb-4 text-gray-700">
-                Please log in to proceed to the test.
+                발급받은 계정 정보를 아래에 입력해 주세요.
             </p>
 
             <form onSubmit={handleLogin} className="space-y-4">

@@ -14,19 +14,23 @@ const SurveyQuestion: React.FC<SurveyQuestionProps> = ({
                                                            onAnswer,
                                                        }) => {
     return (
-        <div style={{ marginTop: "1rem" }}>
-            <p style={{ fontWeight: "bold" }}>{questionText}</p>
+        <div className="mt-4">
+            <p className="font-bold mb-2">{questionText}</p>
             {answers.map((answer, idx) => (
                 <button
                     key={idx}
                     onClick={() => onAnswer(idx)}
-                    style={{
-                        display: "block",
-                        width: "100%",
-                        margin: "0.5rem 0",
-                        padding: "0.75rem",
-                        cursor: "pointer",
-                    }}
+                    className="
+            block w-full
+            mb-2
+            py-2 px-4
+            bg-blue-100
+            text-left
+            rounded
+            cursor-pointer
+            hover:bg-blue-200
+            transition-colors
+          "
                 >
                     {answer}
                 </button>
